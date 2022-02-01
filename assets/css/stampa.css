@@ -1,0 +1,21 @@
+@media print {
+
+body {
+    font-size: 80%;
+    color: gray;
+}
+
+h1 {
+    font-size: 80%;
+    color: rgb(53, 51, 51);
+}
+
+.secondaria {
+    display: none;
+}
+
+.bordo {
+    display: none;
+}
+
+}
