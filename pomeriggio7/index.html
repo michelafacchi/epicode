@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Sviluppo di una pagina web - con Bootstrap</title>
+    <meta name="descripton" content="Primi passi operativi pcon Bootstrap">
+    <meta name="viewport" content="width=device-width", initial-scale=1>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/custombootstrap.css">
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-md navbar-light bg-light">    <!--il menu collassa oltre la misura media (del tablet) Posso modificare-->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+   <main class=container-fluid>      <!--grid system bootstrap-->
+      <section class="row">
+          <div class="col"> prodotto1 </div>     <!--col è un indicazione responsive generica-->
+          <div class="col"> prodotto2 </div>
+          <div class="col"> prodotto3 </div>
+      </section> 
+
+
+      <section class="row">
+        <div class="col-3"> prodotto1 </div>     <!--alle col posso già dare la misura di quante colonne su 12 occupano. poso aggiungere anche i suffissi del Breackpoint-->
+        <div class="col-2"> prodotto2 </div>
+        <div class="col-7"> prodotto3 </div>
+    </section> 
+
+    <section class="row">
+        <div class="col-md-3"> prodotto1 </div>     <!-- posso aggiungere anche i suffissi del Breackpoint-->
+        <div class="col-md-2"> prodotto2 </div>
+        <div class="col-md-7"> prodotto3 </div>
+    </section> 
+
+
+    <section class="row">
+        <div class="col-md-3 col-lg-4"> prodotto1 </div>     <!-- posso aggiungere anche segnalare due casistiche in caso di Breackpoint diversi-->
+        <div class="col-md-2 col-lg-4"> prodotto2 </div>
+        <div class="col-md-7 col-lg-4"> prodotto3 </div>
+    </section> 
+
+
+       <h1 class="display-1 bg-primary">h1. Bootstrap heading</h1> <!--la classe display di Bootstrap si comporta così, in base alle caratteristiche che ci forniscono-->
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <img src="assets/img/imgesempio.jpg" class="img-fluid" alt="questa è un'immagine esempio">  <!--prende di riferimento l'elemento parent al 100% (max-width:100%) ma si adatta al vw-->
+
+
+
+<address class="display-1">           <!--la classe display di Bootstrap si comporta così, in base alle caratteristiche che ci forniscono-->
+    via Vittoria Colonna 12
+</address>
+</main>
+</body>
+</html>
