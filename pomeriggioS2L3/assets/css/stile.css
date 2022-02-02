@@ -1,0 +1,152 @@
+body {
+    font-size: 100%; 
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4; /*interlinea*/
+    margin: 0; 
+    text-align: center;
+    font-weight: lighter;
+}
+header{
+    background-color: black;
+    text-align: center;
+    padding: 5%;
+    margin: 0%;
+}
+header>img{
+    max-width: 15em;
+}
+
+main{
+    font-size: 1.3rem;
+    margin: none;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    font-size: 4rem;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer>h1 {
+    color: white;
+} 
+
+p {
+    margin: 30px;
+}
+p.smaller {
+    font-size: 0.5em;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+.principale>a {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: orangered;
+    font-size: 0.2;
+    margin: 50px;
+    padding: 20px 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.principale {
+    background-image: url(../images/banner.jpg);
+    background-repeat: none;
+    background-size: 130%;
+    margin: none;
+    padding: 50px;
+}
+
+img.secondaria {
+    border-radius: 600px; 
+    width: 90%;
+  }
+.imgbordo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.leggera {                /*da sistemare il bordo*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(179, 167, 167);
+    margin-top: 60px;
+    padding: 0px;
+    width: 90%;
+}
+.evidenziato {
+      background-color: orangered;
+      color: white;
+      padding: 40px;
+      margin-bottom: 50px;
+  }
+  .evidenziato>h1 {
+      color: white;
+  }
+
+  q {
+    font-style: italic;
+}
+
+footer {
+    background-color: #25a2c3;
+    color: white;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+address {
+    font-size: 0.6em;
+    color: white;
+    list-style-type:none;
+    
+}
+.icon:before {
+    font-family: FontAwesome;
+    font-size: 0.8rem;
+    color:orangered;
+}
+
+ul {
+    list-style-type:none;
+}
+
+.piedipagina {
+    font-size: 0.5rem;
+}
+
+
+@media screen and (min-width: 768px){
+    body {
+        font: 1rem;
+    }
+    img {
+        width: 90%;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 1px;
+        align-items: stretch;
+        width: 100%;
+    }
+
+
+}
