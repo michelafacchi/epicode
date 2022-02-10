@@ -1,0 +1,38 @@
+* {   
+     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+
+.h1 {
+    color: white;
+    padding: 7px 15px;
+    font-size: 1.3rem;
+
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+}
+
+#ToDoList {
+    width: 90%;
+    padding: 10px;
+    margin: 10px, 10px;
+}
+
+#ToDoList li {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 0.5px 1.5px rgba(0, 0, 0.2);
+}

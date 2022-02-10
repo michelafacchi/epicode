@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+       rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel ="stylesheet" href="assets/css/stileprogetto3bis.css">
+
+    <title>Progetto3 - TO DO LIST</title>
+</head>
+<body>
+
+    <div class= "container border-2 m-5 bg-white">
+        <h1 class= "h1 bg-dark">ToDoList    -    di Michela</h1> 
+     <form>
+        <div class="row input-group mb-2 mt-2">
+            <div class= "col-10 input-container">
+                <input type="text" id="input" name="utente" class="form-control"> 
+            </div>
+            <div class= "col-2">   
+                <button id="input_button" type="button" class="btn btn-secondary btn-outline-secondary text-white" 
+                onclick="salvaIlTesto(this.form.elements['testo_da_ricordare'].value);"> Aggiungi </button>
+            </div>
+        </div>
+    </form>
+    </div>
+
+        <hr>
+    <div class= "task-container row rounded bg-white">
+        <div class= "col-12"> 
+        <ul id= "ToDoList" class= "list-group">
+        </li>
+        </ul>
+        </div> 
+    </div> 
+
+<script src = "assets/js/jsprogetto3bis.js">   
+</script>
+
+ </body>
+ </html>
