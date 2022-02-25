@@ -68,7 +68,7 @@ export class App{
             wrapper.appendChild(elemento);
         }
 
-        function postcontent(index) {                                   // ora devo far apparire li lato il contenuto che scrivo
+        function postcontent(index) {                             
             let endlit = document.querySelector('ul');
             var contenitore = document.querySelector('.closeDiv');
             posts.forEach((testo, index) => {
@@ -76,7 +76,7 @@ export class App{
             });
             endlit.appendChild(contenitore);
         }
-            const newb = document.querySelector('#new');                //ora devo fare in modo di creare il nuovo post
+            const newb = document.querySelector('#new');                //creao nuovo post
             newb.addEventListener('click', function () {
                 console.log("va");
                 document.querySelector('#title').value = " ";
@@ -89,7 +89,7 @@ export class App{
             const found = document.querySelector('#found').value;
             console.log(found);
 
-            let results = []; // array vuoto che li accogliera'. serve un ciclo foreach
+            let results = []; // array vuoto che li accogliera'. serve ciclo foreach
 
             posts.forEach((post) => {
                 if (post.titolo.indexOf(found) > -1) {      // array parte da 0, quindi devo indicare -1 
